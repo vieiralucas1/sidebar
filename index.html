@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <sidebar class="bar">
+        <div class="sidebar">
+          <nav>
+            <div class="menu">
+              <div class="menu-items header">
+                <div class="logo">
+                  <a href=""><img src="./assets/images/logo.svg" alt="" /></a>
+                </div>
+                <div class="menu">
+                  <i class="toggle" onclick="toggleMenu()">
+                    <img src="./assets/images/menu.svg" alt="" />
+                  </i>
+                </div>
+              </div>
+              <div class="menu-items search">
+                <a href="">
+                  <img src="./assets/images/search.svg" alt="" />
+                </a>
+                <textarea
+                  name=""
+                  placeholder="Buscar"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="menu-items">
+                <a href=""><img src="./assets/images/grid.svg" alt="" /></a>
+                <a href="" id="text-link"><p class="icon-name">Dashboard</p></a>
+              </div>
+              <div class="menu-items">
+                <a href=""><img src="./assets/images/pet.svg" alt="" /></a>
+                <a href=""> <p class="icon-name">Pets</p></a>
+              </div>
+              <div class="menu-items">
+                <a href=""><img src="./assets/images/user.svg" alt="" /></a>
+                <a href=""><p class="icon-name">Clientes</p></a>
+              </div>
+              <div class="menu-items">
+                <a href=""><img src="./assets/images/vet.svg" alt="" /></a>
+                <a href=""> <p class="icon-name">Vets</p></a>
+              </div>
+              <div class="menu-items">
+                <a href=""><img src="./assets/images/settings.svg" alt="" /></a>
+                <a href=""> <p class="icon-name">Ajustes</p></a>
+              </div>
+            </div>
+            <div class="profile" id="data">
+              <a href="" id="profile-pic"
+                ><img src="./assets/images/photo.jpg" alt=""
+              /></a>
+              <div id="profile-text">
+                <a href=""
+                  ><h2 class="user-name">Eleanor Pena</h2>
+                  <p class="user-job">Veterinária</p></a
+                >
+              </div>
+              <a href="" id="log-out"
+                ><img src="./assets/images/log-out.svg" alt=""
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </sidebar>
+      <div class="maincontent">
+        <h1>Dashboard</h1>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
